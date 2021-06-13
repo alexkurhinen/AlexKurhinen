@@ -12,6 +12,7 @@
         var firstName = prompt('Ваша имя?');
         var potranimic = prompt('Ваше отчество?');
         var age = parseInt(prompt('Ваш возраст в годах?'));
+        if (isNaN(age)) var age = parseInt(prompt('Введите возраст в числовом значении'));
         var ageDays = age*365;
         var ageFive = age+5;
         var sex = confirm('Нажмите ок если ваш пол мужской')
